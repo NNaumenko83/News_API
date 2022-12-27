@@ -4,37 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Homework 11</title>
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        class="search-form__input"
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button class="button" button type="submit">Пошук</button>
-    </form>
-
-    <div class="gallery">
-      <!-- Картки зображень -->
-    </div>
-
-    <button
-      class="btn btn-primary button"
-      type="button"
-      data-action="load-more"
-    >
-      <span
-        class="spinner-border spinner-border-sm spinner is-hidden"
-        role="status"
-        aria-hidden="true"
-      ></span>
-      <span class="label">Показати ще</span>
-    </button>
+    <section class="header">
+      <div class="header__container container">
+        <h1 class="header__title">Find news</h1>
+        <p class="header__text">We find all of you need</p>
+        <form class="form" action="#">
+          <input type="text" name="query" placeholder="input your require" />
+          <button type="submit" class="form__submit">Find</button>
+        </form>
+      </div>
+    </section>
+    <div class="news container"></div>
 
     <script src="index.js" type="module"></script>
   </body>
